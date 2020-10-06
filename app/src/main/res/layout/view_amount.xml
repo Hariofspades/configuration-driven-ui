@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/amountView"
+        style="@style/AmountViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@null"
+        android:drawableStart="@drawable/ic_baseline_euro_24"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:hint="0.00"
+        android:imeOptions="actionDone"
+        android:paddingStart="0dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2891" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
