@@ -16,7 +16,7 @@ import dev.drewhamilton.extracare.DataApi
 @DataApi
 class Step private constructor(
     val title: String,
-    val layout: (FragmentManager) -> StackLayout,
+    val layout: (FragmentManager) -> StepLayout,
     val onPay: () -> Unit
 ) {
 
@@ -31,7 +31,7 @@ class Step private constructor(
             @JvmSynthetic set
 
 
-        var layout: (FragmentManager) -> StackLayout = { StackLayout {} }
+        var layout: (FragmentManager) -> StepLayout = { StackLayout {} }
             @JvmSynthetic set
 
 
@@ -42,7 +42,7 @@ class Step private constructor(
             this.title = title
         }
 
-        fun setLayout(layout: (FragmentManager) -> StackLayout) = apply {
+        fun setLayout(layout: (FragmentManager) -> StepLayout) = apply {
             this.layout = layout
         }
 

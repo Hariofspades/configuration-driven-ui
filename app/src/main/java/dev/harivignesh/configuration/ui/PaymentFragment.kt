@@ -3,6 +3,7 @@ package dev.harivignesh.configuration.ui
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import dev.harivignesh.configuration.ui.configuration.StepLayout
 import dev.harivignesh.configuration.ui.epoxy.StepController
 import kotlinx.android.synthetic.main.fragment_payment.*
 
@@ -22,9 +23,16 @@ class PaymentFragment : Fragment(R.layout.fragment_payment) {
     }
 
     private fun setupStack() {
-        val controller = StepController(step.layout(childFragmentManager).stacks)
-        listView.adapter = controller.adapter
-        controller.requestModelBuild()
+        when (val layout = step.layout(childFragmentManager)) {
+            is StepLayout.StackLayout -> {
+                val controller = StepController(layout.stacks)
+                listView.adapter = controller.adapter
+                controller.requestModelBuild()
+            }
+            else -> {
+                // no-op
+            }
+        }
     }
 
 }
