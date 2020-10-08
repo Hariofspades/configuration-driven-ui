@@ -4,15 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dev.harivignesh.configuration.ui.R
-import kotlinx.android.synthetic.main.bottom_sheet_account_picker.*
 
 /**
  * Created by Hari on 06/10/2020.
  * Account picker
  */
 class AccountPicker(val onSelected: (Account) -> Unit): BottomSheetDialogFragment() {
+
+    private val accountList by lazy { view?.findViewById<RecyclerView>(R.id.accountList) }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,7 +24,7 @@ class AccountPicker(val onSelected: (Account) -> Unit): BottomSheetDialogFragmen
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        accountList.adapter = AccountAdapter(list) {
+        accountList?.adapter = AccountAdapter(list) {
             onSelected(it)
             dismiss()
         }
