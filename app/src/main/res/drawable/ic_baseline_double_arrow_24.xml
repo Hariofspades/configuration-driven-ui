@@ -3,11 +3,15 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24"
-    android:tint="?attr/colorControlNormal">
+    android:tint="?colorPrimaryDark">
+  <group
+      android:rotation="90"
+      android:translateX="24">
   <path
       android:fillColor="@android:color/white"
       android:pathData="M15.5,5l-4.5,0l5,7l-5,7l4.5,0l5,-7z"/>
   <path
       android:fillColor="@android:color/white"
       android:pathData="M8.5,5l-4.5,0l5,7l-5,7l4.5,0l5,-7z"/>
+  </group>
 </vector>

@@ -122,7 +122,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="8dp"
-            android:rotation="90"
             android:src="@drawable/ic_baseline_double_arrow_24"
             app:tint="?android:textColorSecondary" />
 
