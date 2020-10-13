@@ -37,29 +37,6 @@ sealed class StepLayout {
 
         }
     }
-
-//    /**
-//     * Created by Hari on 06/10/2020.
-//     * Stack Layout for epoxy lists
-//     *
-//     * Generated using DSL Builder
-//     * @see "https://plugins.jetbrains.com/plugin/14386-dsl-api-generator"
-//     *
-//     * @param stacks list of epoxy models
-//     */
-//    @DataApi
-//    class ComposeLayout private constructor(): StepLayout() {
-//
-//        /**
-//         * A builder for this configuration class
-//         *
-//         * Should be directly used by Java consumers. Kotlin consumers should use DSL function
-//         */
-//        class Builder {
-//
-//            fun build() = ComposeLayout()
-//        }
-//    }
 }
 
 /**
@@ -69,11 +46,3 @@ sealed class StepLayout {
 @Suppress("FunctionName")
 fun StackLayout(block: StepLayout.StackLayout.Builder.() -> Unit) =
     StepLayout.StackLayout.Builder().apply(block).build()
-
-///**
-// * DSL to create [ComposeLayout]
-// */
-//@JvmSynthetic
-//@Suppress("FunctionName")
-//fun ComposeLayout(block: StepLayout.ComposeLayout.Builder.() -> Unit) =
-//    StepLayout.ComposeLayout.Builder().apply(block).build()
