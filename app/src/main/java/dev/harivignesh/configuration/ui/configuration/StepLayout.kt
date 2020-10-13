@@ -4,7 +4,7 @@ import com.airbnb.epoxy.EpoxyModel
 import dev.drewhamilton.extracare.DataApi
 
 /**
- * Created by Backbase R&D B.V on 07/10/2020.
+ * Created by Hari on 07/10/2020.
  * Collection of layouts
  */
 sealed class StepLayout {
