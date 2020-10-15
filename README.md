@@ -1,6 +1,6 @@
 # Configuration driven UI
 Android: Configuration driven UI using Epoxy and migrating to Compose. Refer to the blog post at
-https://harivignesh.dev
+https://www.harivignesh.dev/android:-configuration-driven-ui-from-epoxy-to-compose
 
 ## Configuration driven UI with Epoxy (main branch)
 ```kotlin
