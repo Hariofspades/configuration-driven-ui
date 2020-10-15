@@ -1,7 +1,8 @@
-# configuration-driven-ui
-Android: Configuration driven UI using Epoxy and migrating to Compose
+# Configuration driven UI
+Android: Configuration driven UI using Epoxy and migrating to Compose. Refer to the blog post at
+https://harivignesh.dev
 
-## Configuration driven UI with Epoxy
+## Configuration driven UI with Epoxy (main branch)
 ```kotlin
 PaymentsConfiguration {
         navGraph = R.navigation.navigation_payment
@@ -33,7 +34,7 @@ PaymentsConfiguration {
     }
 }
 ```
-## Configuration driven UI with Jetpack Compose
+## Configuration driven UI with Jetpack Compose (compose branch)
 ```kotlin
 PaymentsConfiguration {
         navGraph = R.navigation.navigation_payment
